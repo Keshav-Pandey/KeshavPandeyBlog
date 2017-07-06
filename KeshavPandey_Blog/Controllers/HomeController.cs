@@ -22,7 +22,7 @@ namespace KeshavPandey_Blog.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Hi! You can reach out to me via the channels below.";
 
             return View();
         }
