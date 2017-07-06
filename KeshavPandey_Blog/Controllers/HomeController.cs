@@ -26,5 +26,12 @@ namespace KeshavPandey_Blog.Controllers
 
             return View();
         }
+
+        public ActionResult Blog()
+        {
+            ViewData["Message"] = "Want to read what i got to say? :";
+
+            return View();
+        }
     }
 }
