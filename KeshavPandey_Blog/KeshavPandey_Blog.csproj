@@ -190,6 +190,7 @@
     <Content Include="Images\angry-bird-blue.png" />
     <Content Include="Images\caculator.png" />
     <Content Include="Images\hostage-rescue.jpg" />
+    <Content Include="Images\ididit.jpg" />
     <Content Include="Images\KeshavPandey.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
