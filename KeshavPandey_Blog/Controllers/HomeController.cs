@@ -29,7 +29,14 @@ namespace KeshavPandey_Blog.Controllers
 
         public ActionResult Blog()
         {
-            ViewData["Message"] = "Want to read what i got to say? :";
+            ViewData["Message"] = "Want to read what i got to say?";
+
+            return View();
+        }
+
+        public ActionResult Twitter()
+        {
+            ViewData["Message"] = "Attck of the Twitteratzi!!";
 
             return View();
         }
