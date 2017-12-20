@@ -1,43 +1,221 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿
+@{
+    ViewBag.Title = "Keshav Prateek Pandey";
+    Layout = "~/Views/Shared/_HomeLayoutPage.cshtml";
 }
-<center>
-    <h1 style="color: #0072c6;">Hello World!</h1>
-    <img src="~/Images/ididit.jpg" class="img-responsive" />
-    <h3 style="color: #0072c6;">I finally did it!</h3>
-    <p>Made a website of course! What were you thinking ? :p</p>
-</center>
-<p>This is my first take on a personal website. Not sure why it took me this long. But here i am!</p>
-<p>Using this website i aim to finally learn MVC concepts on the ASP.NET stack instead of just relying on the classic forms</p>
-<p><strike>This also happens to be my first take on .NET Core library. Am excited to see how it works out on my MAC as well as Windows PC</strike></p>
-<p>Well Azure stopped supporting the older project type for .Net Core library hence have shifted back to .Net Framework. Will try to pivot back once i have VS 2017 setup</p>
-<!-- AddToAny BEGIN -->
-<div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-    <a class="a2a_dd" href="http://keshavpandey.azurewebsites.net/"></a>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_google_plus"></a>
-    <a class="a2a_button_email"></a>
-    <a class="a2a_button_linkedin"></a>
-    <a class="a2a_button_whatsapp"></a>
-</div>
-<script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->
-<div id="disqus_thread"></div>
-<script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//http-keshavpandey-azurewebsites-net.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<!-- Navigation -->
+<a class="menu-toggle rounded" href="#">
+    <i class="fa fa-bars"></i>
+</a>
+<nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+        <li class="sidebar-brand">
+            <a class="js-scroll-trigger" href="#page-top">Keshav Prateek Pandey</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#page-top">Home</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#Research">Research</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="sidebar-nav-item">
+            <a class="js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+    </ul>
+</nav>
+<!-- Header -->
+<header class="masthead d-flex">
+    <div class="container text-center my-auto">
+        <h1 class="mb-1">Keshav Prateek Pandey</h1>
+        <h3 class="mb-5">
+            <em>Software Engineer (Code Ninja)</em>
+        </h3>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+</header>
+<!-- About -->
+<section class="content-section bg-light" id="about">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <h2>I am a tech enthusiast with deep interest for Articial Intelligence, Human Computer Interaction and Ubiquitous Computing</h2>
+                <p class="lead mb-5">I want to unite Human Intellect with Computing technologies in a seamless manner to improve lives globally and solve real world problems</p>
+                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#Research">My Research</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Research -->
+<section class="content-section bg-primary text-white text-center" id="Research">
+    <div class="container">
+        <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Research</h3>
+            <h2 class="mb-5">Publications</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-3">
+                    <i class="icon-screen-smartphone"></i>
+                </span>
+                <h4>
+                    <strong>OU’NANO: A novel method and framework to optimize the utilization of digital communication channel and storage resources for textual based transactions</strong>
+                </h4>
+                <p class="text-faded mb-0">Presented at the IEEE IEOM 2015 Conference, Dubai, UAE. [Publisher: IEEE]</p>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-3">
+                    <i class="icon-calendar"></i>
+                </span>
+                <h4>
+                    <strong>Auto-Segmentation and Content Management for efficient, personal, event accommodation and integration for effective collaborative work</strong>
+                </h4>
+                <p class="text-faded mb-0">Presented at the 8th IATED International Technology, Education and Development Conference 2014 at Valencia, Spain. [Publisher: IATED]</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Work Experience -->
+<section class="callout">
+    <div class="container text-center">
+        <h2 class="mx-auto mb-5">
+            Here's what all <br/><em>I have been upto.</em>
+        </h2>
+        <a class="btn btn-primary btn-xl" href="~/Content/Keshav_Prateek_Pandey.pdf">Download Resume!</a>
+    </div>
+</section>
+<!-- Portfolio -->
+<section class="content-section" id="portfolio">
+    <div class="container">
+        <div class="content-section-heading text-center">
+            <h3 class="text-secondary mb-0">Portfolio</h3>
+            <h2 class="mb-5">Recent Projects</h2>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h2>International Flower Auction, Bangalore</h2>
+                            <p class="mb-0">Development of reverse auction system for perishable goods used by International Flower Auction Bangalore</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="~/Images/flower.jpg" alt="International Flower Auction, Bangalore">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h2>Key Management in Cloud systems</h2>
+                            <p class="mb-0">Provide KMIP compliance in Barbican Open Stack Framework and allow for communication with Propriety IBM Key Management services (TKLM) to enhance management of keys.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="~/Images/server.jpg" alt="Key Management in Cloud systems">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h2>A Graphical Environment for Serious Games</h2>
+                            <p class="mb-0">A project in collaboration with Tata Institute of Social Science and Massachusetts Institute of Technology to incentivize learning and teach students concepts through limited technical resources and connectivity.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="~/Images/games.jpg" alt="A Graphical Environment for Serious Games">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h2>Teacher Interaction Analysis</h2>
+                            <p class="mb-0">Developed metrics for analyzing the effectiveness of teaching methodologies through actions, interactions, gestures and activeness of entities involved.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="~/Images/teacher.jpg" alt="Teacher Interaction Analysis">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h2>Pollspot</h2>
+                            <p class="mb-0">A social platform for opinion analytics which helps users decide and generates actionable information. It supports visualization of data targeting decision making based on region, sex, intentions, age, nationality and other demographics.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="~/Images/pollspot.jpg" alt="Pollspot">
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a class="portfolio-item" href="#">
+                    <span class="caption">
+                        <span class="caption-content">
+                            <h2>Medicinal search engine using linked datasets</h2>
+                            <p class="mb-0">Developed a specialized search, which is context aware and provides detailed information on topics relevant to medicines and diseases such as scientific names, local names, prices, alternatives, side effects etc.</p>
+                        </span>
+                    </span>
+                    <img class="img-fluid" src="~/Images/medicine.jpg" alt="Medicinal search engine using linked datasets">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Achievements -->
+@*<section class="content-section bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+</section>*@
+<!-- Volunteering -->
+@*<section class="content-section bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
+        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+    </div>
+</section>*@
+<!-- Call to Action -->
+<section class="content-section bg-primary text-white" id="contact">
+    <div class="container text-center">
+        <h2 class="mb-4">Contact Me!</h2>
+        <a href="mailto:keshav25@outlook.com" class="btn btn-xl btn-light mr-4"><i class="icon-envelope"></i>&nbsp;Mail Me!</a>
+        <a href="https://twitter.com/keshav2509" class="btn btn-xl btn-dark"><i class="icon-social-twitter"></i>&nbsp;Tweet to Me!</a>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <ul class="list-inline mb-5">
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/keshav-prateek-pandey-8386a95a/">
+                    <i class="icon-social-linkedin"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/keshav2509">
+                    <i class="icon-social-twitter"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="social-link rounded-circle text-white" href="https://github.com/Keshav-Pandey/">
+                    <i class="icon-social-github"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="text-muted small mb-0">Copyright &copy; Keshav Prateek Pandey 2017</p>
+    </div>
+</footer>
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fa fa-angle-up"></i>
+</a>
